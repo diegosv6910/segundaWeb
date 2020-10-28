@@ -84,7 +84,10 @@ function movimiento(){
   contexto.fillStyle="rgb(255,0,0)";
   contexto.arc(x, y, 20, 0, 360,false);
   contexto.fill();
-  
-  setTimeout("movimiento()",20);
+  var timer = setTimeout("movimiento()",20);
 }
 
+function limpiar() {
+  var canvas = document.getElementById("canvas");
+    canvas.width=canvas.width;
+};
